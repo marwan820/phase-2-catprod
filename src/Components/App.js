@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react"
 import "./App.css"
 import NavBar from "./NavBar"
 import { Route, Routes } from "react-router-dom"
-import "../src/styles.css"
-import TestOne from "./TestOne"
+import "./styles.css"
 import SearchForItem from "./SearchForItem"
 import ProductList from "./ProductList"
 import ShoppingCart from "./ShoppingCart"
@@ -48,11 +47,9 @@ function App() {
      const filterProducts = catProducts.filter(
       (item) => item.id !== itemToDelete
     )
-    //setCatProducts(filterProducts) 
-    console.log("Delete",itemToDelete)
-    console.log(catProducts)
+     
+    
     setCatProducts(filterProducts)
-    console.log("filtered",filterProducts)
   }
 
   const filteredItems = productSearch.filter((item) => {
@@ -101,7 +98,7 @@ function App() {
             </Container>
           }
         />
-        <Route path="/TestOne" element={<TestOne />} />
+        
         <Route
           path="/product-form"
           element={<ProductForm addCatProduct={addCatProduct} />}
