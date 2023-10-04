@@ -4,7 +4,7 @@ import React from "react"
 const ShoppingCart = ({ cartList }) => {
 console.log(cartList)
 return(
-    <p>Shopping  Cart</p>
+    <p>Shopping -Cart</p>
 )
 
 
