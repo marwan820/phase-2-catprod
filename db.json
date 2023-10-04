@@ -25,14 +25,6 @@
       "category": "Toys"
     },
     {
-      "id": 4,
-      "name": "Cat Bed",
-      "price": "14.99",
-      "image": "https://i5.walmartimages.com/asr/2eea5e49-f62f-4de9-90d9-9525e2408287_1.23750ad8b01e110e3dbae1b0d11910b5.jpeg",
-      "description": "This cat bed is the perfect place for your cat to relax and curl up. It is made of soft and comfortable materials and features a raised rim to provide your cat with a sense of security.",
-      "category": "Furniture"
-    },
-    {
       "id": 5,
       "name": "Feather Wand",
       "price": "9.99",
