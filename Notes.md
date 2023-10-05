@@ -13,7 +13,7 @@
 * [] Add some styling,
 * [] Incorporate data from an external API,
 ## Task List
-[] create a delete item button
+[x] create a delete item button
 [] style the app 
 [] create a separate repository for a backend server, using render.com
 [] complete the readme.md
