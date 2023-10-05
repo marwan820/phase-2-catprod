@@ -18,12 +18,8 @@ const ItemCard = ({ handleDelete, item, addToCartList, deleteFromCart }) => {
   }
 
   function handleDeleteClick() {
-    
-    // send a fetch request to delete
     handleDelete(id)
-    fetch(`http://localhost:3002/products/${id}`, { method: "DELETE" }).then(
-    ) 
-    
+    fetch(`http://localhost:3002/products/${id}`, { method: "DELETE" }).then()
   }
 
   return (

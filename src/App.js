@@ -73,10 +73,10 @@ function App() {
             <Container
               fluid="md"
               width="auto"
-              style={{ height: "1px", color: "blue" }}
+              style={{ height: "100vw", color: "blue", border: "10px solid blue" }}
             >
               <Row>
-                <Col>
+                <Col style={{border:"10px solid red"}}>
                   <SearchForItem
                     searchTerm={searchTerm}
                     setSearchTerm={setSearchTerm}
@@ -87,8 +87,8 @@ function App() {
                 </Col>
               </Row>
 
-              <Row className="justify-content-md-center">
-                <Col md="auto">
+              <Row className="justify-content-md-center" style={{height:"50%"}}>
+                <Col  style={{border: "10px solid green", height:"10%"}}>
                   <ProductList
                     handleDelete={handleDelete}
                     catProducts={filteredItems}
@@ -101,9 +101,9 @@ function App() {
             </Container>
           }
         />
-        <Route path="/TestOne" element={<TestOne />} />
+      
         <Route
-          path="/product-form"
+           exact path="/product-form"
           element={<ProductForm addCatProduct={addCatProduct} />}
         />
         <Route
