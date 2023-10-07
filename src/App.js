@@ -3,7 +3,6 @@ import "./App.css"
 import NavBar from "./NavBar"
 import { Route, Routes } from "react-router-dom"
 import "../src/styles.css"
-import TestOne from "./TestOne"
 import SearchForItem from "./SearchForItem"
 import ProductList from "./ProductList"
 import ShoppingCart from "./ShoppingCart"
@@ -45,14 +44,14 @@ function App() {
   }
 
   const handleDelete = (itemToDelete) => {
-     const filterProducts = catProducts.filter(
+    const filterProducts = catProducts.filter(
       (item) => item.id !== itemToDelete
     )
-    //setCatProducts(filterProducts) 
-    console.log("Delete",itemToDelete)
+    //setCatProducts(filterProducts)
+    console.log("Delete", itemToDelete)
     console.log(catProducts)
     setCatProducts(filterProducts)
-    console.log("filtered",filterProducts)
+    console.log("filtered", filterProducts)
   }
 
   const filteredItems = productSearch.filter((item) => {
@@ -73,10 +72,14 @@ function App() {
             <Container
               fluid="md"
               width="auto"
-              style={{ height: "100vw", color: "blue", border: "10px solid blue" }}
+              style={{
+                height: "100vw",
+                color: "blue",
+                border: "10px solid blue",
+              }}
             >
               <Row>
-                <Col style={{border:"10px solid red"}}>
+                <Col style={{ border: "10px solid green" }}>
                   <SearchForItem
                     searchTerm={searchTerm}
                     setSearchTerm={setSearchTerm}
@@ -87,8 +90,11 @@ function App() {
                 </Col>
               </Row>
 
-              <Row className="justify-content-md-center" style={{height:"50%"}}>
-                <Col  style={{border: "10px solid green", height:"10%"}}>
+              <Row
+                className="justify-content-md-center"
+                style={{ height: "100%", backgroundColor: "yellow" }}
+              >
+                <Col style={{ border: "10px solid green", height: "10%" }}>
                   <ProductList
                     handleDelete={handleDelete}
                     catProducts={filteredItems}
@@ -101,9 +107,10 @@ function App() {
             </Container>
           }
         />
-      
+
         <Route
-           exact path="/product-form"
+          exact
+          path="/product-form"
           element={<ProductForm addCatProduct={addCatProduct} />}
         />
         <Route

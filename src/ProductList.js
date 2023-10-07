@@ -19,8 +19,10 @@ const ProductList = ({
     />
   ))
   return (
-    <Container className="container" style={{ height: "1px" }}>
-      <Row>{productList}</Row>
+    <Container style={{ height: "10px" }}>
+      <Row class="row align-items-start">
+        {productList}
+      </Row>
     </Container>
   )
 }

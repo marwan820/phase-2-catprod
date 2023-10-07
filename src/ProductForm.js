@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import Form from "react-bootstrap/Form"
 import Button from "react-bootstrap/Button"
 
+
 const ProductForm = ({ addCatProduct }) => {
   const [formData, setFormData] = useState({
     name: "",
@@ -56,7 +57,7 @@ const ProductForm = ({ addCatProduct }) => {
 
   return (
     <>
-      <h1>Create a Product</h1>
+      <h1 className="form-header">Create a Product</h1>
       <Form type="submit" onSubmit={handleSubmit}>
         <Form.Group className="mb-3">
           <Form.Label htmlFor="name">Product Name</Form.Label>
