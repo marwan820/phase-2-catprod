@@ -7,9 +7,9 @@ import SearchForItem from "./SearchForItem"
 import ProductList from "./ProductList"
 import ShoppingCart from "./ShoppingCart"
 import ProductForm from "./ProductForm"
-import Container from "react-bootstrap/Container"
+/* import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
-import Col from "react-bootstrap/Col"
+import Col from "react-bootstrap/Col" */
 
 function App() {
   const [catProducts, setCatProducts] = useState([])
@@ -69,42 +69,22 @@ function App() {
         <Route
           path="/"
           element={
-            <Container
-              fluid="md"
-              width="auto"
-              style={{
-                height: "100vw",
-                color: "blue",
-                border: "10px solid blue",
-              }}
-            >
-              <Row>
-                <Col style={{ border: "10px solid green" }}>
-                  <SearchForItem
-                    searchTerm={searchTerm}
-                    setSearchTerm={setSearchTerm}
-                    catProducts={catProducts}
-                    categorySelect={categorySelect}
-                    setCategorySelect={setCategorySelect}
-                  />
-                </Col>
-              </Row>
-
-              <Row
-                className="justify-content-md-center"
-                style={{ height: "100%", backgroundColor: "yellow" }}
-              >
-                <Col style={{ border: "10px solid green", height: "10%" }}>
-                  <ProductList
-                    handleDelete={handleDelete}
-                    catProducts={filteredItems}
-                    setCatProducts={setCatProducts}
-                    addToCartList={addToCartList}
-                    deleteFromCart={deleteFromCart}
-                  />
-                </Col>
-              </Row>
-            </Container>
+            <div>
+              <SearchForItem 
+                searchTerm={searchTerm}
+                setSearchTerm={setSearchTerm}
+                catProducts={catProducts}
+                categorySelect={categorySelect}
+                setCategorySelect={setCategorySelect}
+              />
+              <ProductList
+                handleDelete={handleDelete}
+                catProducts={filteredItems}
+                setCatProducts={setCatProducts}
+                addToCartList={addToCartList}
+                deleteFromCart={deleteFromCart}
+              />{" "}
+            </div>
           }
         />
 

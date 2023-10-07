@@ -41,6 +41,7 @@ const ProductForm = ({ addCatProduct }) => {
       name: "",
       price: "",
       image: "",
+      description:"",
       category: "",
     })
   }
