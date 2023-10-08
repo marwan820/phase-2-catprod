@@ -23,6 +23,10 @@ function App() {
       .then((items) => setCatProducts(items))
   }, [])
 
+  useEffect(() => {
+    localStorage.setItem("cartList", JSON.stringify(cartList))
+  }, [cartList])
+
   const addCatProduct = (product) => {
     setCatProducts([...catProducts, product])
   }
@@ -47,8 +51,7 @@ function App() {
     const filterProducts = catProducts.filter(
       (item) => item.id !== itemToDelete
     )
-  
-    
+
     setCatProducts(filterProducts)
   }
 
@@ -68,14 +71,14 @@ function App() {
           path="/"
           element={
             <div>
-              <SearchForItem 
+              <SearchForItem
                 searchTerm={searchTerm}
                 setSearchTerm={setSearchTerm}
                 catProducts={catProducts}
                 categorySelect={categorySelect}
                 setCategorySelect={setCategorySelect}
               />
-              
+
               <ProductList
                 handleDelete={handleDelete}
                 catProducts={filteredItems}
