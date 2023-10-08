@@ -1,27 +1,12 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Cat Scratcher Post",
-      "price": "29.99",
-      "image": "https://catnipsum.com/wp-content/uploads/2020/01/PetFusion-3-Sided-Vertical-Cat-Scratching-Post.jpg",
-      "description": "This cat scratcher post is perfect for keeping your cat's nails trimmed and providing them with a place to play and exercise. It is made of durable materials and features a variety of different textures to keep your cat entertained.",
-      "category": "Accessories"
-    },
-    {
       "id": 2,
       "name": "Cat Tree",
       "price": "99.99",
       "image": "https://i5.walmartimages.com/asr/d3ca421f-7750-48aa-b2a4-12b0d41b2eeb.d706468a43b0e28978821d629544aa8d.jpeg",
       "description": "This cat tree is the perfect place for your cat to climb, scratch, and play. It features multiple levels with different activities, including a scratching post, a hammock, and a perch.",
       "category": "Furniture"
-    },
-    {
-      "name": "3 way cat tunnel",
-      "price": "50 ",
-      "image": "https://th.bing.com/th/id/OIP.MI8Twto3Iij6w-aUKqDfBQHaHa?w=216&h=216&c=7&r=0&o=5&dpr=1.3&pid=1.7",
-      "category": "Accesories",
-      "id": 3
     },
     {
       "name": "3 way cat tunnel",
@@ -36,8 +21,13 @@
       "image": "https://th.bing.com/th/id/OIP.MI8Twto3Iij6w-aUKqDfBQHaHa?w=216&h=216&c=7&r=0&o=5&dpr=1.3&pid=1.7",
       "category": "Accesories",
       "id": 5
+    },
+    {
+      "name": "cat brush",
+      "price": "15",
+      "image": "https://th.bing.com/th/id/R.11eb073c969adccd25aaf1834eed7159?rik=UT3yy7bC13vpIw&riu=http%3a%2f%2fcelemoon-store.com%2fwp-content%2fuploads%2f2017%2f12%2f1.1.jpg&ehk=29v%2fhAUmvP45y8L%2fx%2fOv3rFfxUJK8ocE%2fPMvQRNr0AU%3d&risl=&pid=ImgRaw&r=0",
+      "category": "Accesories",
+      "id": 6
     }
-
-
   ]
 }
