@@ -16,7 +16,7 @@ function App() {
   const [catProducts, setCatProducts] = useState([])
   const [categorySelect, setCategorySelect] = useState("All")
   const [searchTerm, setSearchTerm] = useState("")
-  const [cartList, setToCartList] = useState(cartLocalStorage)
+  const [cartList, setCartList] = useState(cartLocalStorage)
 
   useEffect(() => {
     fetch("http://localhost:3002/products")
@@ -27,12 +27,15 @@ function App() {
   useEffect(() => {
     localStorage.setItem("cartList", JSON.stringify(cartList))
   }, [cartList])
-  console.log("cart", cartList)
+ 
 
-  console.log("Cart Local Storage", cartLocalStorage)
+  const deleteFromLocalStorage = (itemToDelete) => {
+    const cartStorageFilter = cartList.filter((item) => {
+      return item.id !== itemToDelete
+    })
+    setCartList(cartStorageFilter)
 
-  const deleteFromLocalStorage = () => {
-    console.log("HELLO")
+    localStorage.setItem("cartList", JSON.stringify(cartStorageFilter))
   }
 
   const addCatProduct = (product) => {
@@ -47,12 +50,12 @@ function App() {
   })
 
   function addToCartList(item) {
-    setToCartList([...cartList, item])
+    setCartList([...cartList, item])
   }
 
   function deleteFromCart(item) {
     const newArray = cartList.filter((product) => product.id !== item.id)
-    setToCartList(newArray)
+    setCartList(newArray)
   }
 
   const handleDelete = (itemToDelete) => {
@@ -109,7 +112,7 @@ function App() {
           element={
             <ShoppingCart
               cartList={cartList}
-              deleteFromCart={deleteFromLocalStorage}
+              deleteFromLocalStorage={deleteFromLocalStorage}
             />
           }
         />
