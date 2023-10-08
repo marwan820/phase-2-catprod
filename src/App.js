@@ -77,13 +77,14 @@ function App() {
                 categorySelect={categorySelect}
                 setCategorySelect={setCategorySelect}
               />
+              
               <ProductList
                 handleDelete={handleDelete}
                 catProducts={filteredItems}
                 setCatProducts={setCatProducts}
                 addToCartList={addToCartList}
                 deleteFromCart={deleteFromCart}
-              />{" "}
+              />
             </div>
           }
         />

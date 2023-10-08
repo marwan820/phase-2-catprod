@@ -23,7 +23,7 @@ const ItemCard = ({ handleDelete, item, addToCartList, deleteFromCart }) => {
   }
 
   return (
-    <Card  className="card" key={id} style={{ width: "10000 rem", height: "10%" }}>
+    <Card  key={id} /* style={{ width: "10000 rem", height: "10%" }} */>
       <Card.Img className="card-img" src={image} alt={name}></Card.Img>
       <Card.Body className="card-body">
         <Card.Title>{name}</Card.Title>

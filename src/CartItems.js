@@ -1,13 +1,9 @@
-import React from 'react'
+import React from "react"
 
-/* const CartItems = ({item}) => {
+const CartItems = ({ item }) => {
+  console.log("Item", item)
 
-console.log(item)
-
-
-  return (
-    <p key={crypto.randomUUID()}>{item.name}</p>
-  )
+  return <p key={item.id}>{item.name}</p>
 }
 
-export default CartItems */
+export default CartItems
