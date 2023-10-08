@@ -1,0 +1,13 @@
+.shopping-cart-container{
+    height: 100vw;
+    display: grid;
+    grid-template-columns: 1 fr 1 fr 1 fr;
+    grid-template-rows: 1 fr 1 fr 1 fr  ;
+    border: 10px  solid blue;
+  }
+
+
+.cart-card{ 
+    grid-column-start: 2;
+    border: 10px solid red;
+}

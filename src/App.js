@@ -5,7 +5,7 @@ import { Route, Routes } from "react-router-dom"
 import "../src/styles.css"
 import SearchForItem from "./SearchForItem"
 import ProductList from "./ProductList"
-import ShoppingCart from "./ShoppingCart"
+import ShoppingCart from "./Shopping Cart/ShoppingCart"
 import ProductForm from "./ProductForm"
 /* import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
@@ -47,11 +47,9 @@ function App() {
     const filterProducts = catProducts.filter(
       (item) => item.id !== itemToDelete
     )
-    //setCatProducts(filterProducts)
-    console.log("Delete", itemToDelete)
-    console.log(catProducts)
+  
+    
     setCatProducts(filterProducts)
-    console.log("filtered", filterProducts)
   }
 
   const filteredItems = productSearch.filter((item) => {
