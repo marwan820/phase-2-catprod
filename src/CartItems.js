@@ -1,9 +1,14 @@
 import React from "react"
 
 const CartItems = ({ item }) => {
-  console.log("Item", item)
-
-  return <p key={item.id}>{item.name}</p>
+  return (
+    <div key={item.id} className="cart-card">
+      <img src={item.image} alt={item.name} />
+      <p>{item.name}</p>
+      <p>{item.price}</p>
+      <button>Remove from cart</button>
+    </div>
+  )
 }
 
 export default CartItems
