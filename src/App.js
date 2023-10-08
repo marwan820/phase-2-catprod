@@ -11,11 +11,14 @@ import ProductForm from "./ProductForm"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col" */
 
+
+  const cartLocalStorage = JSON.parse(localStorage.getItem('cartList') || '[]' )
+
 function App() {
   const [catProducts, setCatProducts] = useState([])
   const [categorySelect, setCategorySelect] = useState("All")
   const [searchTerm, setSearchTerm] = useState("")
-  const [cartList, setToCartList] = useState([])
+  const [cartList, setToCartList] = useState([cartLocalStorage])
 
   useEffect(() => {
     fetch("http://localhost:3002/products")
@@ -98,7 +101,7 @@ function App() {
         <Route
           exact
           path="/cart"
-          element={<ShoppingCart cartList={cartList} />}
+          element={<ShoppingCart cartList={cartList} deleteFromCart={deleteFromCart} />}
         />
       </Routes>
     </>

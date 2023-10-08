@@ -1,11 +1,11 @@
 import React from "react"
 import CartItems from "./CartItems"
 
-const ShoppingCart = ({ cartList }) => {
+const ShoppingCart = ({ cartList,deleteFromCart }) => {
   console.log(cartList)
   const cartItems = cartList.map((item) => {
     return(
-    <CartItems item={item} key={item.id} />)
+    <CartItems item={item} key={item.id} deleteFromCart={deleteFromCart} />)
   })
 
   return (
