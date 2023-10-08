@@ -1,13 +1,16 @@
 import React from "react"
+import Button from 'react-bootstrap/Button'
+import Card from "react-bootstrap/Card"
 
 const CartItems = ({ item }) => {
   return (
-    <div key={item.id} className="cart-card">
-      <img src={item.image} alt={item.name} />
-      <p>{item.name}</p>
-      <p>{item.price}</p>
-      <button>Remove from cart</button>
-    </div>
+    <Card> 
+   <Card.Body key={item.id} className="cart-card" />
+      <Card.Img src={item.image} alt={item.name} />
+      <Card.Text>{item.name}</Card.Text>
+      <Card.Text>{item.price}</Card.Text>
+      <Button>Remove from cart</Button>
+    </Card>
   )
 }
 
