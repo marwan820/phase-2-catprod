@@ -17,6 +17,7 @@ const ProductForm = ({ addCatProduct }) => {
       name: formData.name,
       price: formData.price,
       image: formData.image,
+      description: formData.description,
       category: formData.category,
     }
 
