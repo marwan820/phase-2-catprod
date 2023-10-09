@@ -34,7 +34,7 @@ const SearchForItem = ({
   })
 
   return (
-    <Row  className="filter"style={{justifyContent:"space-evenly", alignItems:"baseline", marginBottom:"5%"}}>
+    <Row  >
 <Col >
       <input
         id="search"
