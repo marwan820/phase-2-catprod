@@ -27,7 +27,6 @@ function App() {
   useEffect(() => {
     localStorage.setItem("cartList", JSON.stringify(cartList))
   }, [cartList])
- 
 
   const deleteFromLocalStorage = (itemToDelete) => {
     const cartStorageFilter = cartList.filter((item) => {
@@ -43,9 +42,11 @@ function App() {
   }
 
   const productSearch = catProducts.filter((item) => {
+    const itemName = item.name ? item.name.toLowerCase() : '';
+    const itemDescription = item.description ? item.description.toLowerCase() : '';
     return (
-      item.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      item.description.toLowerCase().includes(searchTerm.toLowerCase())
+      itemName.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      itemDescription.toLowerCase().includes(searchTerm.toLowerCase())
     )
   })
 
