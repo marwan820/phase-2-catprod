@@ -28,3 +28,7 @@ App will be deployed in the near future and instructions will be provided.
 
 ### License
 [Mit](https://github.com/marwan820/phase-2-catprod/blob/main/LICENSE)
+
+### How it works 
+Heres a video link of how the project works 
+[Video Link](https://youtu.be/5r0gDghe_Vk)

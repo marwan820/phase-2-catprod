@@ -28,14 +28,6 @@
       "image": "https://i5.walmartimages.com/asr/af98850a-d071-4be6-a1b8-4302540e93cd.aec122b5091580fab8cc1e798693c4bf.jpeg",
       "category": "Accesories",
       "id": 7
-    },
-    {
-      "name": "brush",
-      "price": "100",
-      "image": "https://www.tangleteezer.com/media/image/b0/b7/f3/1304x1000-Images_0001s_0009_Cat-Brush-Green.jpg",
-      "description": "testing",
-      "category": "",
-      "id": 8
     }
   ]
 }
