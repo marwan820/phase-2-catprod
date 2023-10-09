@@ -100,7 +100,7 @@ const ProductForm = ({ addCatProduct }) => {
             onChange={handleChange}>
             <option>Toys</option>
             <option>Furniture</option>
-            <option>Accesories</option>
+            <option>Accessories</option>
           </Form.Select>
         </Form.Group>
         <Button type="submit">Submit</Button>
