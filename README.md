@@ -25,3 +25,6 @@ Phase-2 react project for Flat Iron school, to showcase skills developed and app
 ### Deployment
 
 App will be deployed in the near future and instructions will be provided.
+
+### Licence
+
