@@ -1,13 +1,18 @@
 .shopping-cart-container{
-    height: 100vw;
-    display: grid;
-    grid-template-columns: 1 fr 1 fr 1 fr;
-    grid-template-rows: 1 fr 1 fr 1 fr  ;
-    /* border: 10px  solid blue; */
+    height: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+     border: 10px  solid blue; 
+     flex-wrap: wrap;
   }
 
 
 .cart-card{ 
-    grid-column-start: 2;
+  display: grid;
+  grid-template-columns: 2 fr 2 fr;
+  width: fit-content;
+  box-sizing: border-box;
     border: 10px solid red;
 }

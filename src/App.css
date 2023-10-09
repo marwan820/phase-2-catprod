@@ -63,7 +63,7 @@
     border: 5px solid blue;
     display: grid;
     grid-template-columns: 1fr 1fr 1 fr;
-    grid-template-rows: 1fr ; 
+    grid-template-rows: 1fr 1fr ; 
     column-gap:30px ;
     justify-items: space-evenly;
     /* flex-direction: row;
