@@ -26,5 +26,5 @@ Phase-2 react project for Flat Iron school, to showcase skills developed and app
 
 App will be deployed in the near future and instructions will be provided.
 
-### Licence
-[Mit]https://github.com/marwan820/phase-2-catprod/blob/main/LICENSE
+### License
+[Mit](https://github.com/marwan820/phase-2-catprod/blob/main/LICENSE)
