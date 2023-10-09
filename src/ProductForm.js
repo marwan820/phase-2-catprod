@@ -20,13 +20,7 @@ const ProductForm = ({ addCatProduct }) => {
       category: formData.category,
     }
 
-    /* const config = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(newProductForm),
-    } */
+   
 
     fetch("http://localhost:3002/products", {
       method: "POST",
@@ -54,7 +48,7 @@ const ProductForm = ({ addCatProduct }) => {
     setFormData(formDataCopy)
   }
 
-  //console.log(formData)
+  
 
   return (
     <>

@@ -7,9 +7,6 @@ import SearchForItem from "./SearchForItem"
 import ProductList from "./ProductList"
 import ShoppingCart from "./Shopping Cart/ShoppingCart"
 import ProductForm from "./ProductForm"
-/* import Container from "react-bootstrap/Container"
-import Row from "react-bootstrap/Row"
-import Col from "react-bootstrap/Col" */
 
 const cartLocalStorage = JSON.parse(localStorage.getItem("cartList") || "[]")
 function App() {
@@ -42,8 +39,10 @@ function App() {
   }
 
   const productSearch = catProducts.filter((item) => {
-    const itemName = item.name ? item.name.toLowerCase() : '';
-    const itemDescription = item.description ? item.description.toLowerCase() : '';
+    const itemName = item.name ? item.name.toLowerCase() : ""
+    const itemDescription = item.description
+      ? item.description.toLowerCase()
+      : ""
     return (
       itemName.toLowerCase().includes(searchTerm.toLowerCase()) ||
       itemDescription.toLowerCase().includes(searchTerm.toLowerCase())
