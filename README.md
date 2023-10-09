@@ -14,10 +14,9 @@ Phase-2 react project for Flat Iron school, to showcase skills developed and app
 
 ### Status
 
-- Project is in developing stages
-
-- Theme of app has no clear direction if user is adminstrator or retail consumer.
+- Project is in developing stages.
 - Will be used as template for further implementation of lessons learned and skills to practice and develop.
+- Also code will be refactored for better organization
 
 ### Deployment
 
