@@ -4,7 +4,7 @@
 
 ## Description
 
-Phase-2 react project for Flat Iron school, to showcase application of the skills developed, its about handling cat products in an ecommerce theme. including:
+Phase-2 react project for Flat Iron school, to showcase application of the skills developed,  and its about handling cat products in an ecommerce theme. including:
 
 - entering input on a controlled form, to create a cat product
 - filterting through prodcuts using search bar and dropdown
@@ -12,7 +12,7 @@ Phase-2 react project for Flat Iron school, to showcase application of the skill
 - deleting unwanted item from cart page
 - using local storage to persist the items in the cart
 
-## Status
+### Status
 
 - Project is in developing stages.
 

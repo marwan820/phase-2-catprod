@@ -2,14 +2,27 @@ import React, { useState } from "react"
 import Form from "react-bootstrap/Form"
 import Button from "react-bootstrap/Button"
 
-
 const ProductForm = ({ addCatProduct }) => {
   const [formData, setFormData] = useState({
     name: "",
     price: "",
     image: "",
+    description: "",
     category: "",
   })
+
+  const categoryArray = [
+    "Grooming",
+    "Accessories",
+    "Furniture",
+    "Toys",
+    "Miscellaneous",
+  ]
+   const sortedArray = [...categoryArray].sort()
+  //console.log(categoryArray)
+  const categoryValues = sortedArray.map((category) => { return <option key={crypto.randomUUID()}>{category}</option>
+  })
+  console.log(categoryValues)
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -20,8 +33,6 @@ const ProductForm = ({ addCatProduct }) => {
       description: formData.description,
       category: formData.category,
     }
-
-   
 
     fetch("http://localhost:3002/products", {
       method: "POST",
@@ -36,7 +47,7 @@ const ProductForm = ({ addCatProduct }) => {
       name: "",
       price: "",
       image: "",
-      description:"",
+      description: "",
       category: "",
     })
   }
@@ -48,8 +59,6 @@ const ProductForm = ({ addCatProduct }) => {
     formDataCopy[key] = value
     setFormData(formDataCopy)
   }
-
-  
 
   return (
     <>
@@ -97,11 +106,14 @@ const ProductForm = ({ addCatProduct }) => {
         <Form.Group className="mb-3">
           <Form.Label htmlFor="category">Choose category</Form.Label>
           <Form.Select
-            id="category" value={formData.category}
-            onChange={handleChange}>
-            <option>Toys</option>
+            id="category"
+            value={formData.category}
+            onChange={handleChange}
+          >
+            {categoryValues}
+            {/*  <option>Accessories</option>
             <option>Furniture</option>
-            <option>Accessories</option>
+            <option>Accessories</option> */}
           </Form.Select>
         </Form.Group>
         <Button type="submit">Submit</Button>
