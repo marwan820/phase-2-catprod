@@ -18,9 +18,10 @@ const ProductForm = ({ addCatProduct }) => {
     "Toys",
     "Miscellaneous",
   ]
-   const sortedArray = [...categoryArray].sort()
-  //console.log(categoryArray)
-  const categoryValues = sortedArray.map((category) => { return <option key={crypto.randomUUID()}>{category}</option>
+  const sortedArray = [...categoryArray].sort()
+
+  const categoryValues = sortedArray.map((category) => {
+    return <option key={crypto.randomUUID()}>{category}</option>
   })
   console.log(categoryValues)
 
