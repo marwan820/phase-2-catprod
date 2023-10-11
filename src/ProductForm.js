@@ -23,7 +23,7 @@ const ProductForm = ({ addCatProduct }) => {
   const categoryValues = sortedArray.map((category) => {
     return <option key={crypto.randomUUID()}>{category}</option>
   })
-  console.log(categoryValues)
+
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -64,7 +64,7 @@ const ProductForm = ({ addCatProduct }) => {
   return (
     <>
       <h1 className="form-header">Create a Product</h1>
-      <Form type="submit" onSubmit={handleSubmit}>
+      <Form type="submit" onSubmit={handleSubmit} style={{marginLeft:"5px"}}>
         <Form.Group className="mb-3">
           <Form.Label htmlFor="name">Product Name</Form.Label>
           <Form.Control
