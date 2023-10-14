@@ -1,11 +1,12 @@
 .shopping-cart-container{
-    height: 100%;
+    min-height: 10px;
     
-    display: flex;
+    display: grid;
     flex-direction: row;
     justify-content: space-evenly;
      border: 10px  solid blue; 
      flex-wrap: wrap;
+     grid-template-areas: "card card card";
   }
 
 
