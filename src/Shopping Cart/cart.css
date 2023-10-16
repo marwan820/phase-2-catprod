@@ -12,8 +12,10 @@
 
 .cart-card{ 
   display: grid;
+  grid-area: "card";
   grid-template-columns: 2 fr 2 fr;
   width: fit-content;
   box-sizing: border-box;
     border: 10px solid red;
 }
+
