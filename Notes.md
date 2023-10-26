@@ -15,5 +15,9 @@
 ## Task List
 * [x] create a delete item button
 * [] style the app 
-* [] create a separate repository for a backend server, using render.com
-* [] complete the readme.md
+* [] create a separate repository for a backend server
+* [] sort the category filter alphabatically in home/products page
+* [] improve the readme.md
+* []separate the seachbar and category filter into their own component
+* [] organize the files and folders
+* [] add a price total function in cart page
