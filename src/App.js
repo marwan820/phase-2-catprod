@@ -4,7 +4,7 @@ import NavBar from "./NavBar"
 import { Route, Routes } from "react-router-dom"
 import "../src/styles.css"
 import SearchForItem from "./SearchForItem"
-import ProductList from "./ProductList"
+import ProductList from "./Products/ProductList"
 import ShoppingCart from "./Shopping Cart/ShoppingCart"
 import ProductForm from "./ProductForm"
 

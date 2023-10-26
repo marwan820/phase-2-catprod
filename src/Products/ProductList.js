@@ -1,5 +1,6 @@
 import React from "react"
 import ItemCard from "./ItemCard"
+import "../Products/products.css"
 const ProductList = ({
   handleDelete,
   catProducts,
@@ -15,10 +16,7 @@ const ProductList = ({
       item={item}
     />
   ))
-  return (
-   
-      <main className="product-container">  {productList} </main>
-  )
+  return <main className="container">{productList}</main>
 }
 
 export default ProductList
