@@ -21,3 +21,5 @@
 * []separate the seachbar and category filter into their own component
 * [] organize the files and folders
 * [] add a price total function in cart page
+* [] rename functions and variables
+  
