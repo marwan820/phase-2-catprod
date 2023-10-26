@@ -3,19 +3,7 @@
     place-items: center;
   }
   
-    .form{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .form-header{
-    margin-block: 5%;
-    display: flex;
-    justify-content: center;
-
-  }
+    
 
   .filter{
     display: flex;

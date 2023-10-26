@@ -6,7 +6,7 @@ import "../src/nav.css"
 import SearchForItem from "./SearchForItem"
 import ProductList from "./Products/ProductList"
 import ShoppingCart from "./Shopping Cart/ShoppingCart"
-import ProductForm from "./ProductForm"
+import ProductForm from "./Form/ProductForm"
 
 const cartLocalStorage = JSON.parse(localStorage.getItem("cartList") || "[]")
 function App() {

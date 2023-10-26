@@ -1,6 +1,6 @@
 import React from "react"
 import ItemCard from "./ItemCard"
-import "../Products/products.css"
+import "./products.css"
 const ProductList = ({
   handleDelete,
   catProducts,
