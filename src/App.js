@@ -75,7 +75,7 @@ function App() {
   })
 
   return (
-    <>
+    <div className="app">
       <NavBar />
       <Routes>
         <Route
@@ -117,7 +117,7 @@ function App() {
           }
         />
       </Routes>
-    </>
+    </div>
   )
 }
 
