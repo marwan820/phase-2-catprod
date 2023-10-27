@@ -25,12 +25,12 @@ const ItemCard = ({ handleDelete, item, addToCartList, deleteFromCart }) => {
 
   return (
     <Card  key={id}>
-      <Card.Body className="card center-align">
-      <Card.Img className="card-img" src={image} alt={name}></Card.Img>
-        <Card.Title className="card-title">{name}</Card.Title>
-        <Card.Text className="card-price">${price}</Card.Text>
-        <Card.Text className="card-description">{description}</Card.Text>
-        <Card.Text className="card-category">{category}</Card.Text>
+      <Card.Body /* className="card center-align" */>
+      <Card.Img /* className="card-img" */ src={image} alt={name}></Card.Img>
+        <Card.Title /* className="card-title" */>{name}</Card.Title>
+        <Card.Text /* className="card-price" */>${price}</Card.Text>
+        <Card.Text /* className="card-description" */>{description}</Card.Text>
+        <Card.Text /* className="card-category" */>{category}</Card.Text>
         <Button onClick={addToCart} type="submit">
           {inCart === false ? "Add to cart" : "Delete from cart"}
         </Button>
