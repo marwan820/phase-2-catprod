@@ -1,5 +1,8 @@
 .container{
+    border: 10px solid green;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
+margin: 2%
 }
+

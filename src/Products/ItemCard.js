@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import "../Products/itemcard.css"
 /* import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col" */
 import Card from "react-bootstrap/Card"
@@ -23,10 +24,10 @@ const ItemCard = ({ handleDelete, item, addToCartList, deleteFromCart }) => {
   }
 
   return (
-    <Card  key={id} /* style={{ width: "10000 rem", height: "10%" }} */>
+    <Card  key={id}>
       <Card.Img className="card-img" src={image} alt={name}></Card.Img>
-      <Card.Body className="card-body">
-        <Card.Title>{name}</Card.Title>
+      <Card.Body className="card">
+        <Card.Title className="title">{name}</Card.Title>
         <Card.Text>${price}</Card.Text>
         <Card.Text>{description}</Card.Text>
         <Card.Text>{category}</Card.Text>

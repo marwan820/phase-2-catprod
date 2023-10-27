@@ -12,13 +12,3 @@
   }
 
   
-
-  .card-body{
-    
-    display: grid;
-    /* height: 10px; */
-   /*  box-sizing: border-box; */
-   margin: 10px;
-   min-width: 10px;
-   min-height: 10px;
-  }
