@@ -1,8 +1,7 @@
-.container{
+.container {
     border: 10px solid green;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-margin: 2%
+    margin: 2%
 }
-

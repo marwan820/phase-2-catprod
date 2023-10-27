@@ -26,7 +26,7 @@ const ItemCard = ({ handleDelete, item, addToCartList, deleteFromCart }) => {
   return (
     <Card  key={id}>
       <Card.Img className="card-img" src={image} alt={name}></Card.Img>
-      <Card.Body className="card">
+      <Card.Body className="card center-align">
         <Card.Title className="title">{name}</Card.Title>
         <Card.Text>${price}</Card.Text>
         <Card.Text>{description}</Card.Text>
