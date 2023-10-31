@@ -14,7 +14,7 @@ const ShoppingCart = ({ cartList, deleteFromLocalStorage }) => {
 
   return (
     <>
-      <h2 style={{justifyContent:"center",alignItems:"center", display:"flex"}}>Shopping cart</h2>
+      <h2>Shopping cart</h2>
       <div className="shopping-cart-container">{cartItems}</div>
     </>
   )
