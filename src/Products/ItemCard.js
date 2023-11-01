@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import "../Products/itemcard.css"
+import "./itemcard.css"
 /* import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col" */
 //import Card from "react-bootstrap/Card"
@@ -24,21 +24,19 @@ const ItemCard = ({ handleDelete, item, addToCartList, deleteFromCart }) => {
   }
 
   return (
-    
-    < div className="card center-align" key={id} >
-      
-      <img className="card-img" src={image} alt={name}/>
-        <h1 className="card-title">{name}</h1>
-        <p className="card-price">${price}</p>
-        <p className="card-description" >{description}</p>
-        <p  className="card-category">{category}</p>
-        <Button onClick={addToCart} type="submit">
-          {inCart === false ? "Add to cart" : "Delete from cart"}
-        </Button>
-        <Button onClick={handleDeleteClick} variant="danger">
-          Delete Item
-        </Button>
-      </div>
+    <div className="card center-align" key={id}>
+      <img className="card-img" src={image} alt={name} />
+      <h1 className="card-title">{name}</h1>
+      <p className="card-price">${price}</p>
+      <p className="card-description">{description}</p>
+      <p className="card-category">{category}</p>
+      <Button onClick={addToCart} type="submit">
+        {inCart === false ? "Add to cart" : "Delete from cart"}
+      </Button>
+      <Button onClick={handleDeleteClick} variant="danger">
+        Delete Item
+      </Button>
+    </div>
   )
 }
 

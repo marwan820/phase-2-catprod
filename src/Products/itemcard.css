@@ -17,7 +17,7 @@
 
 .center-align{
     display: flex;
-
+border: 10px solid red;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
