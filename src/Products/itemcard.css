@@ -1,7 +1,7 @@
 .card {
     width: 20%;
     border-radius: 8px;
-    border: 100px solid red;
+    border: 1px solid mediumseagreen;
     margin: 2%;
 }
 
@@ -11,13 +11,12 @@
     text-transform: capitalize;
 }
 
- .card-img {
-    width: 10%;
-} 
+.card-img {
+    width: 100%;
+}
 
-.center-align{
+.center-align {
     display: flex;
-border: 10px solid red;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
