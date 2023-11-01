@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import "../Products/itemcard.css"
 /* import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col" */
-import Card from "react-bootstrap/Card"
+//import Card from "react-bootstrap/Card"
 import Button from "react-bootstrap/Button"
 
 const ItemCard = ({ handleDelete, item, addToCartList, deleteFromCart }) => {
@@ -24,21 +24,21 @@ const ItemCard = ({ handleDelete, item, addToCartList, deleteFromCart }) => {
   }
 
   return (
-    <Card  key={id}>
-      <Card.Body className="card">
+    
+    < div className="card center-align" key={id} >
+      
       <img className="card-img" src={image} alt={name}/>
-        <Card.Title className="card-title">{name}</Card.Title>
-        <Card.Text className="card-price">${price}</Card.Text>
-        <Card.Text className="card-description" >{description}</Card.Text>
-        <Card.Text  className="card-category">{category}</Card.Text>
+        <h1 className="card-title">{name}</h1>
+        <p className="card-price">${price}</p>
+        <p className="card-description" >{description}</p>
+        <p  className="card-category">{category}</p>
         <Button onClick={addToCart} type="submit">
           {inCart === false ? "Add to cart" : "Delete from cart"}
         </Button>
         <Button onClick={handleDeleteClick} variant="danger">
           Delete Item
         </Button>
-      </Card.Body>
-    </Card>
+      </div>
   )
 }
 
